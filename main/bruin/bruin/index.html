@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Game O'Clock — Premium Gaming Lounge & Coffee Bar | Your Game Your Break</title>
+    <meta name="description"
+        content="Game O'Clock is Morocco's premium hybrid gaming lounge and specialty coffee bar. Pro PC rigs, PS5 console booths, craft coffee, and squad tournaments. Your Game Your Break.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="theme-color" content="#120F10">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <!-- Game O'Clock Custom CSS -->
+    <link rel="stylesheet" href="css/game-oclock.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- ============================================================
+         NAVIGATION
+         ============================================================ -->
+    <nav class="goc-navbar" id="goc-navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <a href="#hero" class="nav-logo">
+                <img src="img/gameoclock/logo-green-icon.png" alt="Game O'Clock Logo" class="logo-icon"
+                    style="object-fit: contain;">
+                <span class="logo-text">GAME <span>O'CLOCK</span></span>
+            </a>
+
+            <!-- Nav Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="active" data-i18n="nav_home">Home</a></li>
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                <li><a href="#pricing" data-i18n="nav_pricing">Pricing</a></li>
+                <li><a href="#booking" data-i18n="nav_book">Book</a></li>
+                <li><a href="#footer" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+
+            <!-- Actions -->
+            <div class="nav-actions">
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn" id="lang-btn" aria-label="Switch language">
+                        <i data-lucide="globe" style="width:16px;height:16px;"></i>
+                        <span class="lang-btn-text">EN</span>
+                        <i data-lucide="chevron-down" style="width:14px;height:14px;"></i>
+                    </button>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-option active" data-lang="en">English</button>
+                        <button class="lang-option" data-lang="fr">Français</button>
+                        <button class="lang-option" data-lang="ar">العربية </button>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <a href="#booking" class="btn-neon btn-neon-fill" data-i18n="nav_book_rig">Book Your Rig</a>
+
+                <!-- Mobile Toggle -->
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+         MAIN CONTENT
+         ============================================================ -->
+    <main>
+
+        <!-- ==================== HERO SECTION ==================== -->
+        <section class="goc-hero" id="hero">
+            <div class="hero-bg">
+                <img src="img/gameoclock/hero-bg.png" alt="Game O'Clock Gaming Lounge">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-scanlines"></div>
+
+            <!-- Floating Particles -->
+            <div id="hero-particles"></div>
+
+            <div class="hero-content">
+                <div class="hero-badge" data-i18n="hero_badge">Premium Gaming Lounge & Coffee Bar</div>
+
+                <!-- Official Logo -->
+                <img src="img/gameoclock/logo-green-icon.png" alt="Game O'Clock Logo" class="hero-logo-svg"
+                    style="object-fit: contain;">
+
+                <h1>
+                    <span data-i18n="hero_title_1">Game</span>
+                    <span class="highlight" data-i18n="hero_title_2">O'Clock</span>
+                </h1>
+                <p class="tagline" data-i18n="hero_tagline">Your Game Your Break</p>
+
+                <div class="hero-actions">
+                    <a href="#booking" class="btn-neon btn-neon-fill" data-i18n="hero_cta_book">
+                        Book Your Rig
+                    </a>
+                    <a href="#services" class="btn-neon btn-neon-ghost" data-i18n="hero_cta_menu">
+                        Explore Menu
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-scroll-indicator">
+                <span data-i18n="hero_scroll">Scroll Down</span>
+                <i data-lucide="chevron-down" style="width:20px;height:20px;"></i>
+            </div>
+        </section>
+
+        <!-- ==================== ABOUT SECTION ==================== -->
+        <section class="goc-about section-padding" id="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="fade-in-left">
+                            <div class="section-title" style="text-align:left;">
+                                <div class="subtitle" data-i18n="about_subtitle">About Us</div>
+                                <h2 data-i18n="about_title">Where Gaming Meets Coffee Culture</h2>
+                            </div>
+                            <div class="about-text">
+                                <p data-i18n="about_p1">Game O'Clock is the ultimate hybrid destination — a high-end PC
+                                    & console gaming arena fused with a specialty coffee sanctuary. Whether you're
+                                    grinding ranked matches on our pro-spec rigs or chilling on a co-op couch with your
+                                    squad, we've got the setup, the drinks, and the energy to keep you locked in.</p>
+                                <p data-i18n="about_p2">Our baristas craft signature espresso brews and gaming mocktails
+                                    while you play. No elitism, no gatekeeping — just an open lobby where everyone's
+                                    welcome.</p>
+                            </div>
+                            <div class="about-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number" data-i18n="about_stat1_num">30+</span>
+                                    <span class="stat-label" data-i18n="about_stat1_label">Pro Gaming Rigs</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number" data-i18n="about_stat2_num">50+</span>
+                                    <span class="stat-label" data-i18n="about_stat2_label">Craft Beverages</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number" data-i18n="about_stat3_num">24/7</span>
+                                    <span class="stat-label" data-i18n="about_stat3_label">Support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-video fade-in-right">
+                            <img src="img/gameoclock/about-lounge.png" alt="Game O'Clock Lounge Interior">
+                            <div class="video-play-btn" id="about-play-btn" aria-label="Play video">
+                                <i data-lucide="play" style="width:28px;height:28px;color:#120F10;margin-left:3px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SERVICES SECTION ==================== -->
+        <section class="goc-services section-padding" id="services">
+            <div class="container">
+                <div class="section-title fade-in-up">
+                    <div class="subtitle" data-i18n="services_subtitle">What We Offer</div>
+                    <h2 data-i18n="services_title">Level Up Your Experience</h2>
+                </div>
+
+                <div class="row stagger-children">
+                    <!-- Service 1: Console Co-op -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="glass-card service-card fade-in-up">
+                            <div class="service-icon">
+                                <i data-lucide="gamepad-2"></i>
+                            </div>
+                            <h3 data-i18n="svc1_title">Console Co-op Booths</h3>
+                            <p data-i18n="svc1_desc">Squad up on our premium PS5 gaming booths with 4K displays,
+                                surround sound, and comfy seating for up to 6 players. Perfect for co-op sessions and
+                                local tournaments.</p>
+                        </div>
+                    </div>
+                    <!-- Service 2: Coffee & Drinks -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="glass-card service-card fade-in-up">
+                            <div class="service-icon">
+                                <i data-lucide="coffee"></i>
+                            </div>
+                            <h3 data-i18n="svc2_title">Specialty Coffee & Drinks</h3>
+                            <p data-i18n="svc2_desc">Fuel your sessions with barista-crafted espresso brews, signature
+                                gaming mocktails, and premium energy drinks. From flat whites to our legendary "Respawn
+                                Latte".</p>
+                        </div>
+                    </div>
+                    <!-- Service 3: Tournaments -->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <div class="glass-card service-card fade-in-up">
+                            <div class="service-icon">
+                                <i data-lucide="trophy"></i>
+                            </div>
+                            <h3 data-i18n="svc3_title">Tournaments & LAN Parties</h3>
+                            <p data-i18n="svc3_desc">Join our weekly squad tournaments and LAN party events. Compete for
+                                prizes, climb the leaderboard, and become a Game O'Clock champion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PRICING SECTION ==================== -->
+        <section class="goc-pricing section-padding" id="pricing">
+            <div class="container">
+                <div class="section-title fade-in-up">
+                    <div class="subtitle" data-i18n="pricing_subtitle">Pricing & Passes</div>
+                    <h2 data-i18n="pricing_title">Choose Your Play Style</h2>
+                </div>
+
+                <div class="row stagger-children justify-content-center">
+                    <!-- Tier 1: Quick Play -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="glass-card pricing-card fade-in-up">
+                            <div class="pricing-tier" data-i18n="tier1_name">Quick Play</div>
+                            <div class="pricing-name" data-i18n="tier1_name">Quick Play</div>
+                            <div class="pricing-amount" data-i18n="tier1_price">80</div>
+                            <div class="pricing-period" data-i18n="tier1_period">Dirhams / hour</div>
+                            <ul class="pricing-features">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span data-i18n="tier1_f1">Pro rig access</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span data-i18n="tier1_f2">Standard drip coffee</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span data-i18n="tier1_f3">High-speed WiFi</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span data-i18n="tier1_f4">Casual & ranked play</span>
+                                </li>
+                            </ul>
+                            <a href="#booking" class="btn-neon btn-neon-ghost" style="width:100%;"
+                                data-i18n="pricing_cta">Get Started</a>
+                        </div>
+                    </div>
+
+                    <!-- Tier 2: Half-Day (Featured) -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="glass-card pricing-card featured fade-in-up">
+                            <div class="pricing-badge" data-i18n="tier2_badge">Most Popular</div>
+                            <div class="pricing-tier" data-i18n="tier2_name">Half-Day Fuel Pass</div>
+                            <div class="pricing-name" data-i18n="tier2_name">Half-Day Fuel Pass</div>
+                            <div class="pricing-amount" data-i18n="tier2_price">280</div>
+                            <div class="pricing-period" data-i18n="tier2_period">Dirhams / 4 hours</div>
+                            <ul class="pricing-features">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span data-i18n="tier2_f1">Pro rig access (4 hrs)</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span data-i18n="tier2_f2">Any craft barista beverage</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span data-i18n="tier2_f3">Snack included</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span data-i18n="tier2_f4">Priority seating</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span data-i18n="tier2_f5">Save 12% vs hourly</span>
+                                </li>
+                            </ul>
+                            <a href="#booking" class="btn-neon btn-neon-fill" style="width:100%;"
+                                data-i18n="pricing_cta">Get Started</a>
+                        </div>
+                    </div>
+
+                    <!-- Tier 3: Monthly -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="glass-card pricing-card fade-in-up">
+                            <div class="pricing-tier" data-i18n="tier3_name">Monthly Squad</div>
+                            <div class="pricing-name" data-i18n="tier3_name">Monthly Squad</div>
+                            <div class="pricing-amount" data-i18n="tier3_price">1,200</div>
+                            <div class="pricing-period" data-i18n="tier3_period">Dirhams / month</div>
+                            <ul class="pricing-features">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span data-i18n="tier3_f1">Unlimited off-peak play</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span data-i18n="tier3_f2">20% off all cafe items</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span data-i18n="tier3_f3">Priority tournament entry</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span data-i18n="tier3_f4">Exclusive member events</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span data-i18n="tier3_f5">Guest pass (1/month)</span>
+                                </li>
+                            </ul>
+                            <a href="#booking" class="btn-neon btn-neon-ghost" style="width:100%;"
+                                data-i18n="pricing_cta">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== BOOKING SECTION ==================== -->
+        <section class="goc-booking section-padding" id="booking">
+            <div class="container">
+                <div class="section-title fade-in-up">
+                    <div class="subtitle" data-i18n="booking_subtitle">Reserve Your Station</div>
+                    <h2 data-i18n="booking_title">Lock In Your Session</h2>
+                </div>
+
+                <div class="glass-card booking-form-card fade-in-up">
+                    <form id="booking-form" novalidate>
+                        <!-- Name -->
+                        <div class="form-group">
+                            <label for="booking-name" data-i18n="booking_name">Full Name</label>
+                            <input type="text" class="form-control" id="booking-name" name="name"
+                                data-i18n-placeholder="booking_name_ph" placeholder="Enter your full name" required>
+                        </div>
+
+                        <!-- Email & Phone Row -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-email" data-i18n="booking_email">Email Address</label>
+                                <input type="email" class="form-control" id="booking-email" name="email"
+                                    data-i18n-placeholder="booking_email_ph" placeholder="your@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-phone" data-i18n="booking_phone">Phone Number</label>
+                                <input type="tel" class="form-control" id="booking-phone" name="phone"
+                                    data-i18n-placeholder="booking_phone_ph" placeholder="+212 6XX XXX XXX" required>
+                            </div>
+                        </div>
+
+                        <!-- Date & Time Row -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-date" data-i18n="booking_date">Date</label>
+                                <input type="date" class="form-control" id="booking-date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-time" data-i18n="booking_time">Time</label>
+                                <select class="form-control" id="booking-time" name="time" required>
+                                    <option value="08:00">08:00 AM</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="13:00">01:00 PM</option>
+                                    <option value="14:00" selected>02:00 PM</option>
+                                    <option value="15:00">03:00 PM</option>
+                                    <option value="16:00">04:00 PM</option>
+                                    <option value="17:00">05:00 PM</option>
+                                    <option value="18:00">06:00 PM</option>
+                                    <option value="19:00">07:00 PM</option>
+                                    <option value="20:00">08:00 PM</option>
+                                    <option value="21:00">09:00 PM</option>
+                                    <option value="22:00">10:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Station & Party Size Row -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-station" data-i18n="booking_station">Station Type</label>
+                                <select class="form-control" id="booking-station" name="station" required>
+                                    <option value="pc" data-i18n="booking_station_pc">Pro PC Rig</option>
+                                    <option value="console" data-i18n="booking_station_console">Console Co-op Couch
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-party" data-i18n="booking_party">Party Size</label>
+                                <select class="form-control" id="booking-party" name="party" required>
+                                    <option value="1" data-i18n="booking_party_1">1 Player</option>
+                                    <option value="2" data-i18n="booking_party_2">2 Players</option>
+                                    <option value="3" data-i18n="booking_party_3">3 Players</option>
+                                    <option value="4" data-i18n="booking_party_4">4 Players</option>
+                                    <option value="5" data-i18n="booking_party_5">5 Players</option>
+                                    <option value="6" data-i18n="booking_party_6">6+ Players</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Submit -->
+                        <button type="submit" class="btn-neon btn-neon-fill submit-btn" id="booking-submit">
+                            <i data-lucide="lock" style="width:18px;height:18px;"></i>
+                            <span data-i18n="booking_submit">Lock In Station</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="goc-footer" id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <!-- Brand Column -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="footer-brand">
+                            <div class="footer-logo">
+                                <img src="img/gameoclock/logo-green-icon.png" alt="Game O'Clock Logo"
+                                    style="height: 36px; width: auto; object-fit: contain; margin-right: 12px; margin-bottom: 5px;">
+                                <span class="logo-text">GAME <span>O'CLOCK</span></span>
+                            </div>
+                            <p data-i18n="footer_tagline">Your game, your break. The ultimate gaming lounge & coffee
+                                experience in Morocco.</p>
+                            <div class="footer-social">
+                                <a href="https://instagram.com/game_o_clock" target="_blank" rel="noopener"
+                                    aria-label="Instagram">
+                                    <i data-lucide="instagram" style="width:20px;height:20px;"></i>
+                                </a>
+                                <a href="#" aria-label="Facebook">
+                                    <i data-lucide="facebook" style="width:20px;height:20px;"></i>
+                                </a>
+                                <a href="#" aria-label="Twitter">
+                                    <i data-lucide="twitter" style="width:20px;height:20px;"></i>
+                                </a>
+                                <a href="#" aria-label="Discord">
+                                    <i data-lucide="message-circle" style="width:20px;height:20px;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hours Column -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="footer-heading" data-i18n="footer_hours_title">Opening Hours</h4>
+                        <ul class="footer-hours">
+                            <li>
+                                <span data-i18n="footer_hours_daily">Daily</span>
+                                <span data-i18n="footer_hours_time">8:00 AM – 11:00 PM</span>
+                            </li>
+                            <li>
+                                <span>Instagram</span>
+                                <span>@game_o_clock</span>
+                            </li>
+                            <li>
+                                <span>Email</span>
+                                <span>hello@gameoclock.ma</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Map Column -->
+                    <div class="col-lg-5 col-md-12 mb-4">
+                        <h4 class="footer-heading" data-i18n="footer_location_title">Find Us</h4>
+                        <div class="footer-map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106376.72691655107!2d-7.669705!3d33.5731104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb06c1d84f310fd3!2sCasablanca%2C%20Morocco!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                                width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" title="Game O'Clock Location Map">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>
+                    <span data-i18n="footer_copyright">© 2026 Game O'Clock. All rights reserved.</span>
+                    <span data-i18n="footer_rights">Your Game Your Break.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+         SCRIPTS
+         ============================================================ -->
+    <script src="js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/i18n.js"></script>
+
+    <script>
+        /* ================================================================
+           Game O'Clock — Main Application Script
+           ================================================================ */
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Initialize Lucide icons
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+
+            // ---- Navbar Scroll Effect ----
+            const navbar = document.getElementById('goc-navbar');
+            let lastScroll = 0;
+
+            window.addEventListener('scroll', function () {
+                const currentScroll = window.pageYOffset;
+                if (currentScroll > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+                lastScroll = currentScroll;
+            });
+
+            // ---- Active Nav Link on Scroll ----
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            function updateActiveLink() {
+                const scrollPos = window.scrollY + 120;
+                sections.forEach(section => {
+                    const top = section.offsetTop;
+                    const height = section.offsetHeight;
+                    const id = section.getAttribute('id');
+                    if (scrollPos >= top && scrollPos < top + height) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === '#' + id) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', updateActiveLink);
+
+            // ---- Mobile Menu Toggle ----
+            const mobileToggle = document.getElementById('mobile-toggle');
+            const navLinksEl = document.getElementById('nav-links');
+
+            if (mobileToggle) {
+                mobileToggle.addEventListener('click', function () {
+                    this.classList.toggle('active');
+                    navLinksEl.classList.toggle('mobile-open');
+                });
+            }
+
+            // Close mobile menu on link click
+            navLinksEl.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileToggle.classList.remove('active');
+                    navLinksEl.classList.remove('mobile-open');
+                });
+            });
+
+            // ---- Smooth Scroll for Anchor Links ----
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            // ---- Scroll Animations (Intersection Observer) ----
+            const animatedElements = document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right');
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            animatedElements.forEach(el => observer.observe(el));
+
+            // ---- Hero Floating Particles ----
+            const particleContainer = document.getElementById('hero-particles');
+            if (particleContainer) {
+                for (let i = 0; i < 20; i++) {
+                    const particle = document.createElement('div');
+                    particle.classList.add('particle');
+                    particle.style.left = Math.random() * 100 + '%';
+                    particle.style.top = Math.random() * 100 + '%';
+                    particle.style.width = (Math.random() * 4 + 2) + 'px';
+                    particle.style.height = particle.style.width;
+                    particle.style.animationDuration = (Math.random() * 10 + 8) + 's';
+                    particle.style.animationDelay = (Math.random() * 5) + 's';
+                    particle.style.opacity = Math.random() * 0.5 + 0.2;
+                    particleContainer.appendChild(particle);
+                }
+            }
+
+            // ---- Set minimum date for booking ----
+            const dateInput = document.getElementById('booking-date');
+            if (dateInput) {
+                const today = new Date().toISOString().split('T')[0];
+                dateInput.setAttribute('min', today);
+                dateInput.value = today;
+            }
+
+            // ---- Booking Form Submission ----
+            const bookingForm = document.getElementById('booking-form');
+            const submitBtn = document.getElementById('booking-submit');
+
+            if (bookingForm) {
+                bookingForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    // Basic validation
+                    const name = document.getElementById('booking-name').value.trim();
+                    const email = document.getElementById('booking-email').value.trim();
+                    const phone = document.getElementById('booking-phone').value.trim();
+
+                    if (!name || !email || !phone) {
+                        return;
+                    }
+
+                    // Animate button to confirmed state
+                    const submitSpan = submitBtn.querySelector('span');
+                    const submitIcon = submitBtn.querySelector('[data-lucide]');
+
+                    submitBtn.classList.add('submitted');
+                    submitBtn.style.background = '#1F8A12';
+
+                    const currentLang = (typeof i18n !== 'undefined') ? i18n.currentLang : 'en';
+                    const confirmTexts = {
+                        en: 'Station Locked In! ✓',
+                        fr: 'Poste Réservé! ✓',
+                        ar: '!تم الحجز ✓'
+                    };
+
+                    if (submitSpan) submitSpan.textContent = confirmTexts[currentLang] || confirmTexts.en;
+                    if (submitIcon) submitIcon.style.display = 'none';
+
+                    // Reset after 3 seconds
+                    setTimeout(function () {
+                        submitBtn.classList.remove('submitted');
+                        submitBtn.style.background = '';
+                        const resetTexts = {
+                            en: 'Lock In Station',
+                            fr: 'Réserver Le Poste',
+                            ar: 'أكّد الحجز'
+                        };
+                        if (submitSpan) submitSpan.textContent = resetTexts[currentLang] || resetTexts.en;
+                        if (submitIcon) submitIcon.style.display = '';
+                        bookingForm.reset();
+                        if (dateInput) dateInput.value = today;
+                    }, 3000);
+                });
+            }
+
+            // ---- Counter Animation for Stats ----
+            const statNumbers = document.querySelectorAll('.stat-number');
+            const counterObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        const text = el.textContent;
+                        // Only animate numeric parts
+                        const match = text.match(/^(\d+)/);
+                        if (match) {
+                            const target = parseInt(match[1]);
+                            const suffix = text.replace(match[1], '');
+                            let current = 0;
+                            const step = Math.ceil(target / 40);
+                            const interval = setInterval(function () {
+                                current += step;
+                                if (current >= target) {
+                                    current = target;
+                                    clearInterval(interval);
+                                }
+                                el.textContent = current + suffix;
+                            }, 30);
+                        }
+                        counterObserver.unobserve(el);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            statNumbers.forEach(el => counterObserver.observe(el));
+
+        });
+    </script>
+
+</body>
+
+</html>
