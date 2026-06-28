@@ -687,10 +687,19 @@
             });
 
             // ---- Active Nav Link on Scroll ----
-            const sections = document.querySelectorAll('section[id]');
+            const sections = document.querySelectorAll('section[id], footer[id]');
             const navLinks = document.querySelectorAll('.nav-links a');
 
             function updateActiveLink() {
+                const isAtBottom = (window.innerHeight + window.pageYOffset) >= document.documentElement.scrollHeight - 50;
+
+                if (isAtBottom) {
+                    navLinks.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href') === '#footer');
+                    });
+                    return;
+                }
+
                 const scrollPos = window.scrollY + 120;
                 sections.forEach(section => {
                     const top = section.offsetTop;
