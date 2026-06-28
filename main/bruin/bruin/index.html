@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Game O'Clock — Premium Gaming Lounge & Coffee Bar | Your Game Your Break</title>
+    <title>O'Clock Zone — Premium Gaming Lounge & Coffee Bar | Your Game Your Break</title>
     <meta name="description"
-        content="Game O'Clock is Morocco's premium hybrid gaming lounge and specialty coffee bar. Pro PC rigs, PS5 console booths, craft coffee, and squad tournaments. Your Game Your Break.">
+        content="O'Clock Zone is Morocco's premium hybrid gaming lounge and specialty coffee bar. Pro PC rigs, PS5 console booths, craft coffee, and squad tournaments. Your Game Your Break.">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <meta name="theme-color" content="#120F10">
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="img/gameoclock/logo-green-icon.png">
+    <link rel="icon" type="image/png" href="img/gameoclock/logo-green-icon.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +24,7 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
 
-    <!-- Game O'Clock Custom CSS -->
+    <!-- O'Clock Zone Custom CSS -->
     <link rel="stylesheet" href="css/game-oclock.css">
 
     <!-- Lucide Icons -->
@@ -39,9 +40,9 @@
         <div class="navbar-container">
             <!-- Logo -->
             <a href="#hero" class="nav-logo">
-                <img src="img/gameoclock/logo-green-icon.png" alt="Game O'Clock Logo" class="logo-icon"
+                <img src="img/gameoclock/logo-green-icon.png" alt="O'Clock Zone Logo" class="logo-icon"
                     style="object-fit: contain;">
-                <span class="logo-text">GAME <span>O'CLOCK</span></span>
+                <span class="logo-text">O'CLOCK <span>ZONE</span></span>
             </a>
 
             <!-- Nav Links -->
@@ -89,7 +90,7 @@
         <!-- ==================== HERO SECTION ==================== -->
         <section class="goc-hero" id="hero">
             <div class="hero-bg">
-                <img src="img/gameoclock/hero-bg.png" alt="Game O'Clock Gaming Lounge">
+                <img src="img/gameoclock/hero-bg.png" alt="O'Clock Zone Gaming Lounge">
             </div>
             <div class="hero-overlay"></div>
             <div class="hero-scanlines"></div>
@@ -101,12 +102,12 @@
                 <div class="hero-badge" data-i18n="hero_badge">Premium Gaming Lounge & Coffee Bar</div>
 
                 <!-- Official Logo -->
-                <img src="img/gameoclock/logo-green-icon.png" alt="Game O'Clock Logo" class="hero-logo-svg"
+                <img src="img/gameoclock/logo-green-icon.png" alt="O'Clock Zone Logo" class="hero-logo-svg"
                     style="object-fit: contain;">
 
                 <h1>
-                    <span data-i18n="hero_title_1">Game</span>
-                    <span class="highlight" data-i18n="hero_title_2">O'Clock</span>
+                    <span data-i18n="hero_title_1">O'Clock</span>
+                    <span class="highlight" data-i18n="hero_title_2">Zone</span>
                 </h1>
                 <p class="tagline" data-i18n="hero_tagline">Your Game Your Break</p>
 
@@ -137,7 +138,7 @@
                                 <h2 data-i18n="about_title">Where Gaming Meets Coffee Culture</h2>
                             </div>
                             <div class="about-text">
-                                <p data-i18n="about_p1">Game O'Clock is the ultimate hybrid destination — a high-end PC
+                                <p data-i18n="about_p1">O'Clock Zone is the ultimate hybrid destination — a high-end PC
                                     & console gaming arena fused with a specialty coffee sanctuary. Whether you're
                                     grinding ranked matches on our pro-spec rigs or chilling on a co-op couch with your
                                     squad, we've got the setup, the drinks, and the energy to keep you locked in.</p>
@@ -163,7 +164,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="about-video fade-in-right">
-                            <img src="img/gameoclock/about-lounge.png" alt="Game O'Clock Lounge Interior">
+                            <img src="img/gameoclock/about-lounge.png" alt="O'Clock Zone Lounge Interior">
                             <div class="video-play-btn" id="about-play-btn" aria-label="Play video">
                                 <i data-lucide="play" style="width:28px;height:28px;color:#120F10;margin-left:3px;"></i>
                             </div>
@@ -214,7 +215,7 @@
                             </div>
                             <h3 data-i18n="svc3_title">Tournaments & LAN Parties</h3>
                             <p data-i18n="svc3_desc">Join our weekly squad tournaments and LAN party events. Compete for
-                                prizes, climb the leaderboard, and become a Game O'Clock champion.</p>
+                                prizes, climb the leaderboard, and become a O'Clock Zone champion.</p>
                         </div>
                     </div>
                 </div>
@@ -424,6 +425,10 @@
                             <div class="form-group">
                                 <label for="booking-date" data-i18n="booking_date">Date</label>
                                 <input type="date" class="form-control" id="booking-date" name="date" required>
+                                <div id="slot-indicator" class="slot-indicator" style="display:none;">
+                                    <span class="slot-dot"></span>
+                                    <span class="slot-text"></span>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="booking-time" data-i18n="booking_time">Time</label>
@@ -470,6 +475,40 @@
                             </div>
                         </div>
 
+                        <!-- Duration Selector -->
+                        <div class="form-group">
+                            <label data-i18n="booking_duration">Session Duration</label>
+                            <div class="duration-selector" id="duration-selector">
+                                <div class="duration-option">
+                                    <input type="radio" id="dur-1" name="duration" value="1" checked>
+                                    <label for="dur-1">
+                                        <span class="dur-time">1 Hour</span>
+                                        <span class="dur-price">30 DH</span>
+                                    </label>
+                                </div>
+                                <div class="duration-option">
+                                    <input type="radio" id="dur-2" name="duration" value="2">
+                                    <label for="dur-2">
+                                        <span class="dur-time">2 Hours</span>
+                                        <span class="dur-price">55 DH</span>
+                                    </label>
+                                </div>
+                                <div class="duration-option">
+                                    <input type="radio" id="dur-4" name="duration" value="4">
+                                    <label for="dur-4">
+                                        <span class="dur-time">4 Hours</span>
+                                        <span class="dur-price">99 DH</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Price Preview -->
+                        <div class="price-preview" id="price-preview">
+                            <span class="price-label" data-i18n="booking_estimated">Estimated Total</span>
+                            <span class="price-value" id="price-value">30 DH</span>
+                        </div>
+
                         <!-- Submit -->
                         <button type="submit" class="btn-neon btn-neon-fill submit-btn" id="booking-submit">
                             <i data-lucide="lock" style="width:18px;height:18px;"></i>
@@ -477,8 +516,59 @@
                         </button>
                     </form>
                 </div>
+
+                <!-- ==================== RESERVATION TRACKER ==================== -->
+                <div class="reservation-tracker fade-in-up">
+                    <div class="section-title">
+                        <div class="subtitle" data-i18n="tracker_subtitle">Track Your Booking</div>
+                        <h2 data-i18n="tracker_title" style="font-size:28px;">Find Your Reservation</h2>
+                    </div>
+
+                    <div class="tracker-search">
+                        <input type="text" id="tracker-input"
+                            data-i18n-placeholder="tracker_placeholder"
+                            placeholder="Enter reservation code (e.g. GOC-A3F2) or email">
+                        <button class="btn-neon btn-neon-fill" id="tracker-search-btn" type="button">
+                            <i data-lucide="search" style="width:18px;height:18px;"></i>
+                            <span data-i18n="tracker_search">Search</span>
+                        </button>
+                    </div>
+
+                    <div class="tracker-result" id="tracker-result"></div>
+                </div>
             </div>
         </section>
+
+        <!-- ==================== RESERVATION CONFIRMATION MODAL ==================== -->
+        <div class="reservation-modal-overlay" id="reservation-modal">
+            <div class="reservation-modal">
+                <button class="modal-close-btn" id="modal-close" aria-label="Close">&times;</button>
+
+                <div class="modal-success-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </div>
+
+                <h3 class="modal-title" data-i18n="modal_title">Station Locked In!</h3>
+                <p class="modal-subtitle" data-i18n="modal_subtitle">Your reservation has been submitted. Save your code below.</p>
+
+                <div class="reservation-code-display">
+                    <span class="code" id="modal-code" title="Click to copy">---</span>
+                    <small class="copy-hint" data-i18n="modal_copy_hint">Click to copy</small>
+                </div>
+
+                <div class="modal-receipt" id="modal-receipt">
+                    <!-- Populated by JS -->
+                </div>
+
+                <div class="modal-actions">
+                    <button class="btn-neon btn-neon-fill" id="modal-close-action" data-i18n="modal_close_btn">Close</button>
+                </div>
+            </div>
+        </div>
+
 
     </main>
 
@@ -493,14 +583,14 @@
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="footer-brand">
                             <div class="footer-logo">
-                                <img src="img/gameoclock/logo-green-icon.png" alt="Game O'Clock Logo"
+                                <img src="img/gameoclock/logo-green-icon.png" alt="O'Clock Zone Logo"
                                     style="height: 36px; width: auto; object-fit: contain; margin-right: 12px; margin-bottom: 5px;">
-                                <span class="logo-text">GAME <span>O'CLOCK</span></span>
+                                <span class="logo-text">O'CLOCK <span>ZONE</span></span>
                             </div>
                             <p data-i18n="footer_tagline">Your game, your break. The ultimate gaming lounge & coffee
                                 experience in Morocco.</p>
                             <div class="footer-social">
-                                <a href="https://instagram.com/game_o_clock" target="_blank" rel="noopener"
+                                <a href="https://instagram.com/oclock_zone" target="_blank" rel="noopener"
                                     aria-label="Instagram">
                                     <i data-lucide="instagram" style="width:20px;height:20px;"></i>
                                 </a>
@@ -527,11 +617,11 @@
                             </li>
                             <li>
                                 <span>Instagram</span>
-                                <span>@game_o_clock</span>
+                                <span>@oclock_zone</span>
                             </li>
                             <li>
                                 <span>Email</span>
-                                <span>hello@gameoclock.ma</span>
+                                <span>hello@oclockzone.ma</span>
                             </li>
                         </ul>
                     </div>
@@ -543,7 +633,7 @@
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106376.72691655107!2d-7.669705!3d33.5731104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb06c1d84f310fd3!2sCasablanca%2C%20Morocco!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
                                 width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade" title="Game O'Clock Location Map">
+                                referrerpolicy="no-referrer-when-downgrade" title="O'Clock Zone Location Map">
                             </iframe>
                         </div>
                     </div>
@@ -555,7 +645,7 @@
         <div class="footer-bottom">
             <div class="container">
                 <p>
-                    <span data-i18n="footer_copyright">© 2026 Game O'Clock. All rights reserved.</span>
+                    <span data-i18n="footer_copyright">© 2026 O'Clock Zone. All rights reserved.</span>
                     <span data-i18n="footer_rights">Your Game Your Break.</span>
                 </p>
             </div>
@@ -569,10 +659,11 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/i18n.js"></script>
+    <script src="js/reservation.js"></script>
 
     <script>
         /* ================================================================
-           Game O'Clock — Main Application Script
+           O'Clock Zone — Main Application Script
            ================================================================ */
         document.addEventListener('DOMContentLoaded', function () {
 
@@ -640,10 +731,24 @@
             // ---- Smooth Scroll for Anchor Links ----
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#' || !href) return;
+
                     e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    try {
+                        const target = document.querySelector(href);
+                        if (target) {
+                            const headerOffset = 80;
+                            const elementPosition = target.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    } catch (err) {
+                        console.warn('Invalid anchor target selector:', href);
                     }
                 });
             });
@@ -684,13 +789,172 @@
 
             // ---- Set minimum date for booking ----
             const dateInput = document.getElementById('booking-date');
+            const today = new Date().toISOString().split('T')[0];
             if (dateInput) {
-                const today = new Date().toISOString().split('T')[0];
                 dateInput.setAttribute('min', today);
                 dateInput.value = today;
             }
 
-            // ---- Booking Form Submission ----
+            /* ================================================================
+               RESERVATION SYSTEM — Duration & Price Reactivity
+               ================================================================ */
+            const stationSelect = document.getElementById('booking-station');
+            const durationRadios = document.querySelectorAll('input[name="duration"]');
+            const priceValue = document.getElementById('price-value');
+
+            function updatePrice() {
+                const station = stationSelect ? stationSelect.value : 'pc';
+                const durEl = document.querySelector('input[name="duration"]:checked');
+                const duration = durEl ? parseInt(durEl.value) : 1;
+                const cost = ReservationManager.calculateCost(station, duration);
+                if (priceValue) priceValue.textContent = cost + ' DH';
+            }
+
+            if (stationSelect) stationSelect.addEventListener('change', updatePrice);
+            durationRadios.forEach(r => r.addEventListener('change', updatePrice));
+
+            /* ================================================================
+               RESERVATION SYSTEM — Slot Availability
+               ================================================================ */
+            const timeSelect = document.getElementById('booking-time');
+            const slotIndicator = document.getElementById('slot-indicator');
+            const slotDot = slotIndicator ? slotIndicator.querySelector('.slot-dot') : null;
+            const slotText = slotIndicator ? slotIndicator.querySelector('.slot-text') : null;
+
+            function updateSlotAvailability() {
+                if (!dateInput || !timeSelect || !stationSelect || !slotIndicator) return;
+
+                const date = dateInput.value;
+                const time = timeSelect.value;
+                const station = stationSelect.value;
+
+                if (!date) {
+                    slotIndicator.style.display = 'none';
+                    return;
+                }
+
+                const partySelect = document.getElementById('booking-party');
+                const partySize = partySelect ? parseInt(partySelect.value) : 1;
+                const available = ReservationManager.isSlotAvailable(date, time, station, partySize);
+                const slots = ReservationManager.getAvailableSlots(date, station);
+                const slot = slots.find(s => s.time === time);
+
+                slotIndicator.style.display = 'inline-flex';
+
+                if (slot) {
+                    // Remove old classes
+                    slotDot.className = 'slot-dot ' + slot.availability;
+                    slotText.className = 'slot-text ' + slot.availability;
+
+                    if (slot.availability === 'full') {
+                        slotText.textContent = 'Fully booked';
+                    } else if (slot.availability === 'limited') {
+                        slotText.textContent = slot.remaining + ' spots left';
+                    } else {
+                        slotText.textContent = slot.remaining + ' spots available';
+                    }
+                }
+            }
+
+            if (dateInput) dateInput.addEventListener('change', updateSlotAvailability);
+            if (timeSelect) timeSelect.addEventListener('change', updateSlotAvailability);
+            if (stationSelect) stationSelect.addEventListener('change', updateSlotAvailability);
+
+            // Run once on load
+            updateSlotAvailability();
+
+            /* ================================================================
+               RESERVATION SYSTEM — Confirmation Modal
+               ================================================================ */
+            const modal = document.getElementById('reservation-modal');
+            const modalCode = document.getElementById('modal-code');
+            const modalReceipt = document.getElementById('modal-receipt');
+            const modalCloseBtn = document.getElementById('modal-close');
+            const modalCloseAction = document.getElementById('modal-close-action');
+
+            function openModal(reservation) {
+                if (!modal) return;
+
+                // Set code
+                modalCode.textContent = reservation.code;
+
+                // Build receipt
+                const stationLabel = reservation.station === 'pc' ? 'Pro PC Rig' : 'Console Co-op Couch';
+                const dateFormatted = new Date(reservation.date + 'T00:00:00').toLocaleDateString('en-US', {
+                    weekday: 'short', month: 'short', day: 'numeric'
+                });
+
+                // Format time
+                const hour = parseInt(reservation.time.split(':')[0]);
+                const ampm = hour >= 12 ? 'PM' : 'AM';
+                const displayHour = hour > 12 ? hour - 12 : (hour === 0 ? 12 : hour);
+                const timeFormatted = displayHour + ':00 ' + ampm;
+
+                modalReceipt.innerHTML = `
+                    <div class="receipt-row">
+                        <span class="receipt-label">Player</span>
+                        <span class="receipt-value">${reservation.name}</span>
+                    </div>
+                    <div class="receipt-row">
+                        <span class="receipt-label">Date</span>
+                        <span class="receipt-value">${dateFormatted}</span>
+                    </div>
+                    <div class="receipt-row">
+                        <span class="receipt-label">Time</span>
+                        <span class="receipt-value">${timeFormatted}</span>
+                    </div>
+                    <div class="receipt-row">
+                        <span class="receipt-label">Station</span>
+                        <span class="receipt-value">${stationLabel}</span>
+                    </div>
+                    <div class="receipt-row">
+                        <span class="receipt-label">Duration</span>
+                        <span class="receipt-value">${reservation.duration} hour${reservation.duration > 1 ? 's' : ''}</span>
+                    </div>
+                    <div class="receipt-row">
+                        <span class="receipt-label">Party Size</span>
+                        <span class="receipt-value">${reservation.party} player${reservation.party > 1 ? 's' : ''}</span>
+                    </div>
+                    <div class="receipt-row total">
+                        <span class="receipt-label">Estimated Total</span>
+                        <span class="receipt-value">${reservation.cost} DH</span>
+                    </div>
+                `;
+
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeModal() {
+                if (!modal) return;
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            // Copy code to clipboard
+            if (modalCode) {
+                modalCode.addEventListener('click', function () {
+                    navigator.clipboard.writeText(this.textContent).then(() => {
+                        const hint = document.querySelector('.copy-hint');
+                        if (hint) {
+                            hint.textContent = 'Copied! ✓';
+                            setTimeout(() => { hint.textContent = 'Click to copy'; }, 2000);
+                        }
+                    });
+                });
+            }
+
+            if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
+            if (modalCloseAction) modalCloseAction.addEventListener('click', closeModal);
+            if (modal) {
+                modal.addEventListener('click', function (e) {
+                    if (e.target === modal) closeModal();
+                });
+            }
+
+            /* ================================================================
+               RESERVATION SYSTEM — Form Submission
+               ================================================================ */
             const bookingForm = document.getElementById('booking-form');
             const submitBtn = document.getElementById('booking-submit');
 
@@ -698,46 +962,187 @@
                 bookingForm.addEventListener('submit', function (e) {
                     e.preventDefault();
 
-                    // Basic validation
                     const name = document.getElementById('booking-name').value.trim();
                     const email = document.getElementById('booking-email').value.trim();
                     const phone = document.getElementById('booking-phone').value.trim();
+                    const date = document.getElementById('booking-date').value;
+                    const time = document.getElementById('booking-time').value;
+                    const station = document.getElementById('booking-station').value;
+                    const party = document.getElementById('booking-party').value;
+                    const durEl = document.querySelector('input[name="duration"]:checked');
+                    const duration = durEl ? durEl.value : '1';
 
-                    if (!name || !email || !phone) {
+                    if (!name || !email || !phone) return;
+
+                    // Check availability
+                    if (!ReservationManager.isSlotAvailable(date, time, station, parseInt(party))) {
+                        const submitSpan = submitBtn.querySelector('span');
+                        submitBtn.style.background = '#d9534f';
+                        if (submitSpan) submitSpan.textContent = 'Slot is full! Try another time';
+                        setTimeout(() => {
+                            submitBtn.style.background = '';
+                            if (submitSpan) submitSpan.textContent = 'Lock In Station';
+                        }, 3000);
                         return;
                     }
 
-                    // Animate button to confirmed state
-                    const submitSpan = submitBtn.querySelector('span');
-                    const submitIcon = submitBtn.querySelector('[data-lucide]');
+                    // Create reservation
+                    const result = ReservationManager.createReservation({
+                        name, email, phone, date, time, station, duration, party
+                    });
 
-                    submitBtn.classList.add('submitted');
-                    submitBtn.style.background = '#1F8A12';
+                    if (result.success) {
+                        // Show confirmation modal
+                        openModal(result.reservation);
 
-                    const currentLang = (typeof i18n !== 'undefined') ? i18n.currentLang : 'en';
-                    const confirmTexts = {
-                        en: 'Station Locked In! ✓',
-                        fr: 'Poste Réservé! ✓',
-                        ar: '!تم الحجز ✓'
-                    };
-
-                    if (submitSpan) submitSpan.textContent = confirmTexts[currentLang] || confirmTexts.en;
-                    if (submitIcon) submitIcon.style.display = 'none';
-
-                    // Reset after 3 seconds
-                    setTimeout(function () {
-                        submitBtn.classList.remove('submitted');
-                        submitBtn.style.background = '';
-                        const resetTexts = {
-                            en: 'Lock In Station',
-                            fr: 'Réserver Le Poste',
-                            ar: 'أكّد الحجز'
-                        };
-                        if (submitSpan) submitSpan.textContent = resetTexts[currentLang] || resetTexts.en;
-                        if (submitIcon) submitIcon.style.display = '';
+                        // Reset form
                         bookingForm.reset();
-                        if (dateInput) dateInput.value = today;
-                    }, 3000);
+                        if (dateInput) {
+                            dateInput.value = today;
+                            dateInput.setAttribute('min', today);
+                        }
+                        // Reset duration to 1hr
+                        const dur1 = document.getElementById('dur-1');
+                        if (dur1) dur1.checked = true;
+                        updatePrice();
+                        updateSlotAvailability();
+
+                        // Re-initialize Lucide
+                        if (typeof lucide !== 'undefined') lucide.createIcons();
+                    } else {
+                        alert(result.errors.join('\n'));
+                    }
+                });
+            }
+
+            /* ================================================================
+               RESERVATION SYSTEM — Tracker
+               ================================================================ */
+            const trackerInput = document.getElementById('tracker-input');
+            const trackerSearchBtn = document.getElementById('tracker-search-btn');
+            const trackerResult = document.getElementById('tracker-result');
+
+            function searchReservation() {
+                if (!trackerInput || !trackerResult) return;
+                const query = trackerInput.value.trim();
+                if (!query) return;
+
+                let reservations = [];
+
+                // Check if it's a code (GOC-XXXX pattern)
+                if (/^GOC-/i.test(query)) {
+                    const r = ReservationManager.getReservation(query);
+                    if (r) reservations = [r];
+                } else if (query.includes('@')) {
+                    // Search by email
+                    reservations = ReservationManager.findByEmail(query);
+                } else {
+                    // Try as code anyway
+                    const r = ReservationManager.getReservation(query);
+                    if (r) reservations = [r];
+                }
+
+                if (reservations.length === 0) {
+                    trackerResult.innerHTML = `
+                        <div class="tracker-card" style="text-align:center;">
+                            <p style="color:var(--text-muted);margin:0;">No reservation found. Check your code or email.</p>
+                        </div>
+                    `;
+                    return;
+                }
+
+                trackerResult.innerHTML = reservations.map(r => renderTrackerCard(r)).join('');
+
+                // Bind cancel buttons
+                trackerResult.querySelectorAll('.tracker-cancel-btn').forEach(btn => {
+                    btn.addEventListener('click', function () {
+                        const code = this.dataset.code;
+                        if (confirm('Cancel reservation ' + code + '?')) {
+                            ReservationManager.updateStatus(code, 'cancelled');
+                            searchReservation(); // Refresh
+                        }
+                    });
+                });
+            }
+
+            function renderTrackerCard(r) {
+                const statusSteps = ['pending', 'confirmed', 'completed'];
+                const statusIndex = statusSteps.indexOf(r.status);
+                const isCancelled = r.status === 'cancelled';
+
+                const stationLabel = r.station === 'pc' ? 'Pro PC Rig' : 'Console Co-op';
+                const dateFormatted = new Date(r.date + 'T00:00:00').toLocaleDateString('en-US', {
+                    weekday: 'short', month: 'short', day: 'numeric'
+                });
+                const hour = parseInt(r.time.split(':')[0]);
+                const ampm = hour >= 12 ? 'PM' : 'AM';
+                const displayHour = hour > 12 ? hour - 12 : (hour === 0 ? 12 : hour);
+                const timeFormatted = displayHour + ':00 ' + ampm;
+
+                let timelineHTML = '';
+                if (!isCancelled) {
+                    timelineHTML = `
+                        <div class="status-timeline">
+                            ${statusSteps.map((step, i) => {
+                                let cls = '';
+                                if (i < statusIndex) cls = 'completed';
+                                else if (i === statusIndex) cls = 'active';
+                                const icons = ['⏳', '✓', '★'];
+                                return `
+                                    <div class="timeline-step ${cls}">
+                                        <div class="timeline-dot">${icons[i]}</div>
+                                        <span class="timeline-label">${step}</span>
+                                    </div>
+                                `;
+                            }).join('')}
+                        </div>
+                    `;
+                }
+
+                const canCancel = r.status === 'pending' || r.status === 'confirmed';
+
+                return `
+                    <div class="tracker-card">
+                        <div class="tracker-card-header">
+                            <span class="tracker-code">${r.code}</span>
+                            <span class="status-badge ${r.status}">${r.status}</span>
+                        </div>
+                        <div class="tracker-details">
+                            <div class="tracker-detail-item">
+                                <div class="detail-label">Player</div>
+                                <div class="detail-value">${r.name}</div>
+                            </div>
+                            <div class="tracker-detail-item">
+                                <div class="detail-label">Date</div>
+                                <div class="detail-value">${dateFormatted}</div>
+                            </div>
+                            <div class="tracker-detail-item">
+                                <div class="detail-label">Time</div>
+                                <div class="detail-value">${timeFormatted}</div>
+                            </div>
+                            <div class="tracker-detail-item">
+                                <div class="detail-label">Station</div>
+                                <div class="detail-value">${stationLabel}</div>
+                            </div>
+                            <div class="tracker-detail-item">
+                                <div class="detail-label">Duration</div>
+                                <div class="detail-value">${r.duration}h</div>
+                            </div>
+                            <div class="tracker-detail-item">
+                                <div class="detail-label">Cost</div>
+                                <div class="detail-value">${r.cost} DH</div>
+                            </div>
+                        </div>
+                        ${timelineHTML}
+                        ${canCancel ? '<button class="tracker-cancel-btn" data-code="' + r.code + '">Cancel Reservation</button>' : ''}
+                    </div>
+                `;
+            }
+
+            if (trackerSearchBtn) trackerSearchBtn.addEventListener('click', searchReservation);
+            if (trackerInput) {
+                trackerInput.addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') searchReservation();
                 });
             }
 

@@ -1,5 +1,5 @@
 /* ========================================================================
-   Game O'Clock — Internationalization (i18n) Module
+   O'Clock Zone — Internationalization (i18n) Module
    Supports: English, Français, العربية (Darija)
    ======================================================================== */
 
@@ -19,8 +19,8 @@ const i18n = {
 
             // Hero
             hero_badge: 'Premium Gaming Lounge & Coffee Bar',
-            hero_title_1: 'Game',
-            hero_title_2: "O'Clock",
+            hero_title_1: "O'Clock",
+            hero_title_2: 'Zone',
             hero_tagline: 'Your Game Your Break',
             hero_cta_book: 'Book Your Rig',
             hero_cta_menu: 'Explore Menu',
@@ -29,7 +29,7 @@ const i18n = {
             // About
             about_subtitle: 'About Us',
             about_title: 'Where Gaming Meets Coffee Culture',
-            about_p1: 'Game O\'Clock is the ultimate hybrid destination — a high-end PC & console gaming arena fused with a specialty coffee sanctuary. Whether you\'re grinding ranked matches on our pro-spec rigs or chilling on a co-op couch with your squad, we\'ve got the setup, the drinks, and the energy to keep you locked in.',
+            about_p1: 'O\'Clock Zone is the ultimate hybrid destination — a high-end PC & console gaming arena fused with a specialty coffee sanctuary. Whether you\'re grinding ranked matches on our pro-spec rigs or chilling on a co-op couch with your squad, we\'ve got the setup, the drinks, and the energy to keep you locked in.',
             about_p2: 'Our baristas craft signature espresso brews and gaming mocktails while you play. No elitism, no gatekeeping — just an open lobby where everyone\'s welcome.',
             about_stat1_num: '20+',
             about_stat1_label: 'Pro Gaming Rigs',
@@ -46,7 +46,7 @@ const i18n = {
             svc2_title: 'Specialty Coffee & Drinks',
             svc2_desc: 'Fuel your sessions with barista-crafted espresso brews, signature gaming mocktails, and premium energy drinks. From flat whites to our legendary "Respawn Latte".',
             svc3_title: 'Tournaments & LAN Parties',
-            svc3_desc: 'Join our weekly squad tournaments and LAN party events. Compete for prizes, climb the leaderboard, and become a Game O\'Clock champion.',
+            svc3_desc: 'Join our weekly squad tournaments and LAN party events. Compete for prizes, climb the leaderboard, and become a O\'Clock Zone champion.',
 
             // Pricing
             pricing_subtitle: 'Pricing & Passes',
@@ -100,6 +100,20 @@ const i18n = {
             booking_name_ph: 'Enter your full name',
             booking_email_ph: 'your@email.com',
             booking_phone_ph: '+212 6XX XXX XXX',
+            booking_duration: 'Session Duration',
+            booking_estimated: 'Estimated Total',
+
+            // Reservation Modal
+            modal_title: 'Station Locked In!',
+            modal_subtitle: 'Your reservation has been submitted. Save your code below.',
+            modal_copy_hint: 'Click to copy',
+            modal_close_btn: 'Close',
+
+            // Reservation Tracker
+            tracker_subtitle: 'Track Your Booking',
+            tracker_title: 'Find Your Reservation',
+            tracker_placeholder: 'Enter reservation code (e.g. GOC-A3F2) or email',
+            tracker_search: 'Search',
 
             // Footer
             footer_tagline: 'Your game, your break. The ultimate gaming lounge & coffee experience in Morocco.',
@@ -107,7 +121,7 @@ const i18n = {
             footer_hours_daily: 'Daily',
             footer_hours_time: '8:00 AM – 11:00 PM',
             footer_location_title: 'Find Us',
-            footer_copyright: '© 2026 Game O\'Clock. All rights reserved.',
+            footer_copyright: '© 2026 O\'Clock Zone. All rights reserved.',
             footer_rights: 'Your Game Your Break.',
         },
 
@@ -123,8 +137,8 @@ const i18n = {
 
             // Hero
             hero_badge: 'Salon de Gaming Premium & Coffee Bar',
-            hero_title_1: 'Game',
-            hero_title_2: "O'Clock",
+            hero_title_1: "O'Clock",
+            hero_title_2: 'Zone',
             hero_tagline: 'Ton Jeu, Ta Pause',
             hero_cta_book: 'Réserver Ton Poste',
             hero_cta_menu: 'Voir Le Menu',
@@ -133,7 +147,7 @@ const i18n = {
             // About
             about_subtitle: 'À Propos',
             about_title: 'Là Où Le Gaming Rencontre Le Café',
-            about_p1: 'Game O\'Clock est la destination hybride ultime — une arène de gaming PC & console haut de gamme fusionnée avec un sanctuaire de café de spécialité. Que vous grimpiez les rangs sur nos PC pro ou que vous relaxiez en co-op avec votre squad, on a le setup, les boissons et l\'énergie pour vous garder à fond.',
+            about_p1: 'O\'Clock Zone est la destination hybride ultime — une arène de gaming PC & console haut de gamme fusionnée avec un sanctuaire de café de spécialité. Que vous grimpiez les rangs sur nos PC pro ou que vous relaxiez en co-op avec votre squad, on a le setup, les boissons et l\'énergie pour vous garder à fond.',
             about_p2: 'Nos baristas préparent des espressos signature et des mocktails gaming pendant que vous jouez. Pas d\'élitisme, pas de gatekeeping — juste un lobby ouvert où tout le monde est le bienvenu.',
             about_stat1_num: '20+',
             about_stat1_label: 'Gaming Pro',
@@ -150,7 +164,7 @@ const i18n = {
             svc2_title: 'Café de Spécialité & Boissons',
             svc2_desc: 'Alimentez vos sessions avec des espressos artisanaux, des mocktails gaming signature et des boissons énergisantes premium. Du flat white à notre légendaire "Respawn Latte".',
             svc3_title: 'Tournois & LAN Parties',
-            svc3_desc: 'Rejoignez nos tournois hebdomadaires et nos événements LAN. Compétissez pour des prix, grimpez le classement et devenez champion Game O\'Clock.',
+            svc3_desc: 'Rejoignez nos tournois hebdomadaires et nos événements LAN. Compétissez pour des prix, grimpez le classement et devenez champion O\'Clock Zone.',
 
             // Pricing
             pricing_subtitle: 'Tarifs & Pass',
@@ -204,6 +218,20 @@ const i18n = {
             booking_name_ph: 'Entrez votre nom complet',
             booking_email_ph: 'votre@email.com',
             booking_phone_ph: '+212 6XX XXX XXX',
+            booking_duration: 'Durée de la Session',
+            booking_estimated: 'Total Estimé',
+
+            // Reservation Modal
+            modal_title: 'Poste Réservé!',
+            modal_subtitle: 'Votre réservation a été soumise. Enregistrez votre code ci-dessous.',
+            modal_copy_hint: 'Cliquer pour copier',
+            modal_close_btn: 'Fermer',
+
+            // Reservation Tracker
+            tracker_subtitle: 'Suivre Votre Réservation',
+            tracker_title: 'Retrouver Votre Réservation',
+            tracker_placeholder: 'Entrez le code (ex: GOC-A3F2) ou email',
+            tracker_search: 'Rechercher',
 
             // Footer
             footer_tagline: 'Ton jeu, ta pause. L\'expérience ultime de gaming & café au Maroc.',
@@ -211,7 +239,7 @@ const i18n = {
             footer_hours_daily: 'Tous les jours',
             footer_hours_time: '8h00 – 23h00',
             footer_location_title: 'Nous Trouver',
-            footer_copyright: '© 2026 Game O\'Clock. Tous droits réservés.',
+            footer_copyright: '© 2026 O\'Clock Zone. Tous droits réservés.',
             footer_rights: 'Ton Jeu, Ta Pause.',
         },
 
@@ -227,8 +255,8 @@ const i18n = {
 
             // Hero
             hero_badge: 'صالة ألعاب ومقهى فاخر',
-            hero_title_1: 'Game',
-            hero_title_2: "O'Clock",
+            hero_title_1: "O'Clock",
+            hero_title_2: 'Zone',
             hero_tagline: 'لعبك، استراحتك',
             hero_cta_book: 'احجز مقعدك',
             hero_cta_menu: 'اطلع على القائمة',
@@ -237,7 +265,7 @@ const i18n = {
             // About
             about_subtitle: 'من نحن',
             about_title: 'حيث يلتقي اللعب بالقهوة',
-            about_p1: 'Game O\'Clock هي وجهتك المثالية لعشاق الألعاب، حيث نوفر أجهزة ألعاب احترافية للحاسوب وأجهزة الكونسول، بالإضافة إلى ركن للقهوة المختصة. سواء كنت تلعب مباريات تنافسية أو تستمتع مع أصدقائك، ستجد لدينا أفضل التجهيزات والمشروبات والأجواء.',
+            about_p1: 'O\'Clock Zone هي وجهتك المثالية لعشاق الألعاب، حيث نوفر أجهزة ألعاب احترافية للحاسوب وأجهزة الكونسول، بالإضافة إلى ركن للقهوة المختصة. سواء كنت تلعب مباريات تنافسية أو تستمتع مع أصدقائك، ستجد لدينا أفضل التجهيزات والمشروبات والأجواء.',
             about_p2: 'يُحضّر خبراء القهوة لدينا مشروبات الإسبريسو المميزة والموكتيلات الخاصة بالألعاب أثناء استمتاعك باللعب. الجميع مرحب به، سواء كنت لاعبًا محترفًا أو هاويًا.',
             about_stat1_num: '+20',
             about_stat1_label: 'منصة ألعاب',
@@ -254,7 +282,7 @@ const i18n = {
             svc2_title: 'قهوة مختصة ومشروبات',
             svc2_desc: 'زد من حماسك مع قهوة الإسبريسو المختصة، والموكتيلات المميزة، ومشروبات الطاقة. من الفلات وايت إلى مشروب "Respawn Latte" الشهير.',
             svc3_title: 'بطولات وحفلات LAN',
-            svc3_desc: 'شارك في البطولات الأسبوعية وفعاليات LAN، وتنافس للفوز بالجوائز، وتسلق لوحة المتصدرين، وكن بطل Game O\'Clock.',
+            svc3_desc: 'شارك في البطولات الأسبوعية وفعاليات LAN، وتنافس للفوز بالجوائز، وتسلق لوحة المتصدرين، وكن بطل O\'Clock Zone.',
 
             // Pricing
             pricing_subtitle: 'الأسعار والباقات',
@@ -311,6 +339,20 @@ const i18n = {
             booking_name_ph: 'أدخل اسمك الكامل',
             booking_email_ph: 'example@email.com',
             booking_phone_ph: '+212 6XX XXX XXX',
+            booking_duration: 'مدة الجلسة',
+            booking_estimated: 'المجموع التقديري',
+
+            // Reservation Modal
+            modal_title: '!تم تأكيد الحجز',
+            modal_subtitle: 'تم تقديم حجزك. احفظ الرمز أدناه.',
+            modal_copy_hint: 'اضغط للنسخ',
+            modal_close_btn: 'إغلاق',
+
+            // Reservation Tracker
+            tracker_subtitle: 'تتبع حجزك',
+            tracker_title: 'ابحث عن حجزك',
+            tracker_placeholder: 'أدخل رمز الحجز (مثال: GOC-A3F2) أو البريد الإلكتروني',
+            tracker_search: 'بحث',
 
             // Footer
             footer_tagline: 'لعبك، استراحتك. أفضل تجربة ألعاب وقهوة في المغرب.',
@@ -318,7 +360,7 @@ const i18n = {
             footer_hours_daily: 'يوميًا',
             footer_hours_time: '08:00 صباحًا - 11:00 مساءً',
             footer_location_title: 'الموقع',
-            footer_copyright: '© 2026 Game O\'Clock. جميع الحقوق محفوظة.',
+            footer_copyright: '© 2026 O\'Clock Zone. جميع الحقوق محفوظة.',
             footer_rights: 'لعبك، استراحتك.',
         }
     },
