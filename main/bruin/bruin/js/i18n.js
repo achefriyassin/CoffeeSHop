@@ -123,6 +123,7 @@ const i18n = {
             footer_location_title: 'Find Us',
             footer_copyright: '© 2026 O\'Clock Zone. All rights reserved.',
             footer_rights: 'Your Game Your Break.',
+            whatsapp_tooltip: 'Chat with us!',
         },
 
         fr: {
@@ -241,6 +242,7 @@ const i18n = {
             footer_location_title: 'Nous Trouver',
             footer_copyright: '© 2026 O\'Clock Zone. Tous droits réservés.',
             footer_rights: 'Ton Jeu, Ta Pause.',
+            whatsapp_tooltip: 'Discutez avec nous !',
         },
 
         ar: {
@@ -362,6 +364,7 @@ const i18n = {
             footer_location_title: 'الموقع',
             footer_copyright: '© 2026 O\'Clock Zone. جميع الحقوق محفوظة.',
             footer_rights: 'لعبك، استراحتك.',
+            whatsapp_tooltip: 'تواصل معنا!',
         }
     },
 
