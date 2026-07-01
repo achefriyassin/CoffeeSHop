@@ -126,45 +126,44 @@
         </section>
 
         <!-- ==================== ABOUT SECTION ==================== -->
-        <section class="goc-about section-padding" id="about">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 mb-5 mb-lg-0">
-                        <div class="fade-in-left">
-                            <div class="section-title" style="text-align:left;">
-                                <div class="subtitle" data-i18n="about_subtitle">About Us</div>
-                                <h2 data-i18n="about_title">Where Gaming Meets Coffee Culture</h2>
-                            </div>
-                            <div class="about-text">
-                                <p data-i18n="about_p1">O'Clock Zone is the ultimate hybrid destination — a high-end PC
-                                    & console gaming arena fused with a specialty coffee sanctuary. Whether you're
-                                    grinding ranked matches on our pro-spec rigs or chilling on a co-op couch with your
-                                    squad, we've got the setup, the drinks, and the energy to keep you locked in.</p>
-                                <p data-i18n="about_p2">Our baristas craft signature espresso brews and gaming mocktails
-                                    while you play. No elitism, no gatekeeping — just an open lobby where everyone's
-                                    welcome.</p>
-                            </div>
-                            <div class="about-stats">
-                                <div class="stat-item">
-                                    <span class="stat-number" data-i18n="about_stat1_num">15+</span>
-                                    <span class="stat-label" data-i18n="about_stat1_label"> Gaming space</span>
-                                </div>
-                                <div class="stat-item">
-                                    <span class="stat-number" data-i18n="about_stat2_num">0+</span>
-                                    <span class="stat-label" data-i18n="about_stat2_label">Craft Beverages</span>
-                                </div>
-                                <div class="stat-item">
-                                    <span class="stat-number" data-i18n="about_stat3_num">24/7</span>
-                                    <span class="stat-label" data-i18n="about_stat3_label">Support</span>
-                                </div>
-                            </div>
-                        </div>
+        <section class="goc-about-fullscreen" id="about">
+            <!-- Fullscreen Background Video -->
+            <div class="video-background">
+                <video autoplay loop muted playsinline>
+                    <source src="https://assets.mixkit.co/videos/preview/mixkit-gaming-pc-setup-with-neon-lights-42283-large.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+
+            <div class="container about-fullscreen-container">
+                <!-- Header: ABOUT US + Tagline inline -->
+                <div class="about-fullscreen-header fade-in-up">
+                    <div class="about-header-flex">
+                        <span class="subtitle" data-i18n="about_subtitle">About Us</span>
+                        <span class="header-divider"></span>
+                        <h2 data-i18n="about_title">Where Gaming Meets Coffee Culture</h2>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="about-video fade-in-right">
-                            <img src="img/gameoclock/about-lounge.png" alt="O'Clock Zone Lounge Interior">
-                            <div class="video-play-btn" id="about-play-btn" aria-label="Play video">
-                                <i data-lucide="play" style="width:28px;height:28px;color:#120F10;margin-left:3px;"></i>
+                </div>
+
+                <!-- Description & Info Grid -->
+                <div class="about-fullscreen-content">
+                    <div class="about-glass-card fade-in-up">
+                        <p class="about-desc" data-i18n="about_p1">O'Clock Zone is the ultimate hybrid destination — a high-end PC & console gaming arena fused with a specialty coffee sanctuary. Whether you're grinding ranked matches on our pro-spec rigs or chilling on a co-op couch with your squad, we've got the setup, the drinks, and the energy to keep you locked in. Our baristas craft signature espresso brews and gaming mocktails while you play. No elitism, no gatekeeping — just an open lobby where everyone's welcome.</p>
+                        
+                        <!-- Stats sub-grid -->
+                        <div class="about-fullscreen-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-i18n="about_stat1_num">20+</span>
+                                <span class="stat-label" data-i18n="about_stat1_label">Pro Gaming Rigs</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-i18n="about_stat2_num">30+</span>
+                                <span class="stat-label" data-i18n="about_stat2_label">Craft Beverages</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-i18n="about_stat3_num">24/7</span>
+                                <span class="stat-label" data-i18n="about_stat3_label">Support</span>
                             </div>
                         </div>
                     </div>

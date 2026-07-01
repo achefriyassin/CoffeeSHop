@@ -29,8 +29,8 @@ const i18n = {
             // About
             about_subtitle: 'About Us',
             about_title: 'Where Gaming Meets Coffee Culture',
-            about_p1: 'O\'Clock Zone is the ultimate hybrid destination — a high-end PC & console gaming arena fused with a specialty coffee sanctuary. Whether you\'re grinding ranked matches on our pro-spec rigs or chilling on a co-op couch with your squad, we\'ve got the setup, the drinks, and the energy to keep you locked in.',
-            about_p2: 'Our baristas craft signature espresso brews and gaming mocktails while you play. No elitism, no gatekeeping — just an open lobby where everyone\'s welcome.',
+            about_p1: 'O\'Clock Zone is the ultimate hybrid destination — a high-end PC & console gaming arena fused with a specialty coffee sanctuary. Whether you\'re grinding ranked matches on our pro-spec rigs or chilling on a co-op couch with your squad, we\'ve got the setup, the drinks, and the energy to keep you locked in. Our baristas craft signature espresso brews and gaming mocktails while you play. No elitism, no gatekeeping — just an open lobby where everyone\'s welcome.',
+            about_p2: '',
             about_stat1_num: '20+',
             about_stat1_label: 'Pro Gaming Rigs',
             about_stat2_num: '30+',
@@ -147,8 +147,8 @@ const i18n = {
             // About
             about_subtitle: 'À Propos',
             about_title: 'Là Où Le Gaming Rencontre Le Café',
-            about_p1: 'O\'Clock Zone est la destination hybride ultime — une arène de gaming PC & console haut de gamme fusionnée avec un sanctuaire de café de spécialité. Que vous grimpiez les rangs sur nos PC pro ou que vous relaxiez en co-op avec votre squad, on a le setup, les boissons et l\'énergie pour vous garder à fond.',
-            about_p2: 'Nos baristas préparent des espressos signature et des mocktails gaming pendant que vous jouez. Pas d\'élitisme, pas de gatekeeping — juste un lobby ouvert où tout le monde est le bienvenu.',
+            about_p1: 'O\'Clock Zone est la destination hybride ultime — une arène de gaming PC & console haut de gamme fusionnée avec un sanctuaire de café de spécialité. Que vous grimpiez les rangs sur nos PC pro ou que vous relaxiez en co-op avec votre squad, on a le setup, les boissons et l\'énergie pour vous garder à fond. Nos baristas préparent des espressos signature et des mocktails gaming pendant que vous jouez. Pas d\'élitisme, pas de gatekeeping — juste un lobby ouvert où tout le monde est le bienvenu.',
+            about_p2: '',
             about_stat1_num: '20+',
             about_stat1_label: 'Gaming Pro',
             about_stat2_num: '30+',
@@ -265,8 +265,8 @@ const i18n = {
             // About
             about_subtitle: 'من نحن',
             about_title: 'حيث يلتقي اللعب بالقهوة',
-            about_p1: 'O\'Clock Zone هي وجهتك المثالية لعشاق الألعاب، حيث نوفر أجهزة ألعاب احترافية للحاسوب وأجهزة الكونسول، بالإضافة إلى ركن للقهوة المختصة. سواء كنت تلعب مباريات تنافسية أو تستمتع مع أصدقائك، ستجد لدينا أفضل التجهيزات والمشروبات والأجواء.',
-            about_p2: 'يُحضّر خبراء القهوة لدينا مشروبات الإسبريسو المميزة والموكتيلات الخاصة بالألعاب أثناء استمتاعك باللعب. الجميع مرحب به، سواء كنت لاعبًا محترفًا أو هاويًا.',
+            about_p1: 'O\'Clock Zone هي وجهتك المثالية لعشاق الألعاب، حيث نوفر أجهزة ألعاب احترافية للحاسوب وأجهزة الكونسول، بالإضافة إلى ركن للقهوة المختصة. سواء كنت تلعب مباريات تنافسية أو تستمتع مع أصدقائك، ستجد لدينا أفضل التجهيزات والمشروبات والأجواء. يُحضّر خبراء القهوة لدينا مشروبات الإسبريسو المميزة والموكتيلات الخاصة بالألعاب أثناء استمتاعك باللعب. لا مكان للإقصاء أو القيود — فقط صالة مفتوحة ترحب بالجميع.',
+            about_p2: '',
             about_stat1_num: '+20',
             about_stat1_label: 'منصة ألعاب',
             about_stat2_num: '+30',
